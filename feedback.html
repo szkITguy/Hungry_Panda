@@ -1,0 +1,53 @@
+<html>
+<head>
+
+<link rel="stylesheet" href="mystyle.css">
+<style>
+label{
+font-family:Franklin Gothic;
+}
+
+</style>
+</head>
+
+<body>
+<form name="f1">
+<fieldset>
+<legend><h3>Feedback</h3></legend>
+<h2><b>Tell us what you think about Hungry Panda.</b></h2>
+
+<h3>
+<label>Name </label><br>
+<input type="text" name="name" required><br>
+<br>
+
+<label>Email </label><br>
+<input type="email" name="email" required><br><br>
+
+<label>Phone number </label><font style="color:grey">(optional)</font><br>
+<input type="tel" name="phone"><br><br>
+
+<label>Message </label><br>
+<textarea name="comments" rows="5" cols="50" required></textarea><br><br>
+
+<label>Gender</label><br>
+<input type="radio" name="r" id="m">Male<br>
+<input type="radio" name="r" id="f">Female<br><br>
+
+<label>Food ordered</label><br>
+<input type="checkbox" id="c1">Starter &nbsp
+<input type="checkbox" id="c2">Main course &nbsp
+<input type="checkbox" id="c3">Dessert<br><br>
+
+
+<input type="button" value="Submit" onclick="validate()">
+</h3>
+
+</legend>
+</fieldset>
+</form>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="mail.js"></script>
+</body>
+
+</html>
